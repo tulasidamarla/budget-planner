@@ -127,9 +127,9 @@ app.post("/submit-budget-plan", function (req, res) {
 
   let remainingPercentage =
     100 -
-    parseFloat(invType1Percentage) +
-    parseFloat(invType2Percentage) +
-    parseFloat(invType3Percentage) +
+    parseFloat(invType1Percentage) -
+    parseFloat(invType2Percentage) -
+    parseFloat(invType3Percentage) -
     parseFloat(invType4Percentage);
   investmentData.investmentType.push({
     type: "remainingMoney",
