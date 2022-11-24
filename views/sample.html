@@ -1,0 +1,40 @@
+<script>
+  const myArr = JSON.parse(name);
+  document.getElementById("demo").innerHTML = myArr[0];
+</script>
+<style>
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    width: 50%;
+    padding: 5px;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 16px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% JSON.parse(name).table.forEach(function(data) { %>
+    <tr>
+      <td><%= data.year %></td>
+      <td><%= data.amount %></td>
+    </tr>
+    <% }); %>
+  </tbody>
+</table>

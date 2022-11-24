@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <form action="/submit-budget-plan" method="post">
+      Salary : <input name="salary" type="number" /> <br />
+      rental income: <input name="rentalincome" type="number" /> <br />
+      other income: <input name="otherincome" type="number" /> <br />
+      edu expenses: <input name="eduexpense" type="number" /> <br />
+      living expenses: <input name="livingexpense" type="number" /> <br />
+      other expenses: <input name="otherexpense" type="number" /> <br />
+      rent: <input name="rentalexpense" type="number" /> <br />
+      home loan emi: <input name="hlemiexpense" type="number" /> <br />
+      PL emis: <input name="plemiexpense" type="number" /> <br />
+      Investment 1:
+      <select name="invType1" id="invType1">
+        <option value="mf">Mutual Fund</option>
+        <option value="equity">Equity</option>
+        <option value="pf">PF</option>
+        <option value="realEstate">realEstate</option>
+      </select>
+      percentage: <input name="invType1Percentage" type="number" value="0" />
+      <br />
+      Investment 2:
+      <select name="invType2" id="invType2">
+        <option value="mf">Mutual Fund</option>
+        <option value="equity">Equity</option>
+        <option value="pf">PF</option>
+        <option value="realEstate">realEstate</option>
+      </select>
+      percentage: <input name="invType2Percentage" type="number" value="0" />
+      <br />
+      Investment 3:
+      <select name="invType3" id="invType3">
+        <option value="mf">Mutual Fund</option>
+        <option value="equity">Equity</option>
+        <option value="pf">PF</option>
+        <option value="realEstate">realEstate</option>
+      </select>
+      percentage: <input name="invType3Percentage" type="number" value="0" />
+      <br />
+      Investment Type:
+      <select name="invType4" id="invType4">
+        <option value="mf">Mutual Fund</option>
+        <option value="equity">Equity</option>
+        <option value="pf">PF</option>
+        <option value="realEstate">realEstate</option>
+      </select>
+      percentage: <input name="invType4Percentage" type="number" value="0" />
+      <br />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
